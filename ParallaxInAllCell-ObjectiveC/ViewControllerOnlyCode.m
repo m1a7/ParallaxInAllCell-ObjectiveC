@@ -137,7 +137,12 @@
     NSArray *visibleCells = [self.tableView visibleCells];
     
     for (ParallaxCellOnlyCode *cell in visibleCells) {
+        // Use this if you have uitableview on viewcontroller
         [cell cellOnTableView:self.tableView didScrollOnView:self.view];
+        
+        // Use this if you have uitableviewcontroller
+        //[cell cellOnTableView:self.tableView didScrollOnView:self.view.superview];
+
     }
 }
 
