@@ -15,6 +15,7 @@
 #define IS_PORTRAIT     UIDeviceOrientationIsPortrait([[UIApplication sharedApplication] statusBarOrientation])
 
 @interface ViewControllerOnlyCode () <UIScrollViewDelegate>
+
 @property (nonatomic, strong) NSArray *tableItems;
 @property (nonatomic, strong) NSArray *tableTitleItems;
 
